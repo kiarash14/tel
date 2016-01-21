@@ -221,19 +221,17 @@ function create_config( )
     "all",
     "leave_ban"
     },
-    sudo_users = {110626080,103649648,111020322,0,tonumber(our_id)},--Sudo users
+    sudo_users = {100096055,131189448,146661928,0,tonumber(our_id)},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Teleseed v2 - Open Source
+    about_text = [[Telebumper v1
 An advance Administration bot based on yagop/telegram-bot 
 
-https://github.com/SEEDTEAM/TeleSeed
 
 Admins
-@iwals [Founder]
-@imandaneshi [Developer]
-@Rondoozle [Developer]
-@seyedan25 [Manager]
+@kiarash_gh1 [Manager]
+@Xx_MAMAD_ahrimanam_Xx [Developer]
+
 
 Special thanks to
 awkward_potato
@@ -242,8 +240,7 @@ topkecleon
 Vamptacus
 
 Our channels
-@teleseedch [English]
-@iranseed [persian]
+@telebumper [English]
 ]],
     help_text_realm = [[
 Realm Commands:
@@ -322,97 +319,97 @@ This command will send text to [group_id]
     help_text = [[
 Commands list :
 
-!kick [username|id]
+!kick [username|id]   اخراج کن
 You can also do it by reply
 
-!ban [ username|id]
+!ban [ username|id] برای همیشه اخراج کن
 You can also do it by reply
 
-!unban [id]
+!unban [id] از برای همیشه اخراج شدن در بیار
 You can also do it by reply
 
-!who
+!who لیست افراد گروه
 Members list
 
-!modlist
+!modlist لیست ادمین ها
 Moderators list
 
-!promote [username]
+!promote [username] ادمین کن
 Promote someone
 
-!demote [username]
+!demote [username] از ادمین در بیار
 Demote someone
 
-!kickme
+!kickme منو از گروه اخراج کن
 Will kick user
 
-!about
+!about در مورد گروه
 Group description
 
-!setphoto
+!setphoto عکس گروهو عوض کن + خودکار قفل میشود
 Set and locks group photo
 
-!setname [name]
+!setname [name] برای گروه اسم بزار
 Set group name
 
-!rules
+!rules قانون گروه
 Group rules
 
-!id
+!id ایدیه من
 return group id or user id
 
-!help
+!help کمک 
 
-!lock [member|name|bots|leave]	
-Locks [member|name|bots|leaveing] 
+!lock [member|name|bots] قفل کن (اعضای گروه،اسم.ربات)
+Locks [member|name|bots] 
 
-!unlock [member|name|bots|leave]
-Unlocks [member|name|bots|leaving]
+!unlock [member|name|photo|bots] از قفل در بیار (اعضای گروه،اسم.عکس.ربات)
+Unlocks [member|name|photo|bots]
 
-!set rules <text>
+!set rules <text> قانون بزار 
 Set <text> as rules
 
-!set about <text>
+!set about <text> در مورد گروه بزار
 Set <text> as about
 
-!settings
+!settings تنظیمات گروه
 Returns group settings
 
-!newlink
+!newlink لینک جدید بده
 create/revoke your group link
 
-!link
+!link لینک بده
 returns group link
 
-!owner
+!owner ادمین اصلی گروه
 returns group owner id
 
-!setowner [id]
+!setowner [id] ادمین اصلی گروه رو عوض کن
 Will set id as owner
 
-!setflood [value]
+!setflood [value] هرکی چند بار پشت سر هم یهمتنی رو بده از گروه اخراج بشه (اسپم)
 Set [value] as flood sensitivity
 
-!stats
+!stats هرکی چه قدر حرف زده
 Simple message statistics
-
-!save [value] <text>
+ 
+!save [value] <text> سیو کن
 Save <text> as [value]
 
-!get [value]
+!get [value] بده
 Returns text of [value]
 
-!clean [modlist|rules|about]
+!clean [modlist|rules|about] پاک کن(ادمین ها،قانون،درمورد گروه)
 Will clear [modlist|rules|about] and set it to nil
 
-!res [username]
+!res [username] مشخصات 
 returns user id
 "!res @username"
 
 !log
 will return group logs
 
-!banlist
+!banlist لیست اون کسایی که برای همیشه از گروه اخراج شده اند
 will return group ban list
 
 **U can use both "/" and "!" 
